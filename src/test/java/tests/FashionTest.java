@@ -33,8 +33,9 @@ public class FashionTest extends BaseTest {
     }
 
     @Test(priority = 2, groups = {"smoke"})
-    public void verifyUserCanSearchShirts() {
+    public void verifyUserCanSearchShirts() throws InterruptedException {
         home = new HomePage(driver);
+        Thread.sleep(2000);
         home.searchProduct("shirts");        
         Assert.assertTrue(driver.findElements(By.cssSelector("div[class='lfFUxn'] li[class='Swx5kP']")).size() > 0);
     }
