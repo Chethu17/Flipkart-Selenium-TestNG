@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FashionTest">
+      <class name="tests.FlightTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="clearOldScreenshots"/>
-          <include name="verifyUserCanSelectSearchSuggestion"/>
+          <include name="verifyDateSelected"/>
         </methods>
-      </class> <!-- tests.FashionTest -->
+      </class> <!-- tests.FlightTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

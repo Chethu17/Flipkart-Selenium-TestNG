@@ -11,13 +11,13 @@
       </run>
     </groups>
     <classes>
-      <class name="tests.FlightTest">
+      <class name="tests.ElectronicsTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifySearchResults"/>
+          <include name="verifySwitchWindow"/>
         </methods>
-      </class> <!-- tests.FlightTest -->
+      </class> <!-- tests.ElectronicsTest -->
     </classes>
   </test> <!-- Automation Tests(failed) -->
 </suite> <!-- Failed suite [Flipkart Suite] -->
