@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ElectronicsTest">
+      <class name="tests.FlightTest">
         <methods>
           <include name="setup"/>
-          <include name="verifySwitchWindow"/>
           <include name="tearDown"/>
-          <include name="verifySearchProduct"/>
           <include name="clearOldScreenshots"/>
+          <include name="verifyDateSelected"/>
         </methods>
-      </class> <!-- tests.ElectronicsTest -->
+      </class> <!-- tests.FlightTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

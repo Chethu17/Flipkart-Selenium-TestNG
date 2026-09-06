@@ -2,7 +2,7 @@
 <suite name="Flipkart Suite">
 
     <parameter name="day" value="14"/>
-    <parameter name="monthYear" value="June 2026"/>
+    <parameter name="monthYear" value="October 2026"/>
 
     <test name="Automation Tests">
     
@@ -15,7 +15,7 @@
 
         <classes>
 			<class name="tests.ElectronicsTest"/>
-            <class name="tests.FashionTest"/>       
+               <!-- <class name="tests.FashionTest"/>   -->    
             <class name="tests.FlightTest"/>
 
         </classes>

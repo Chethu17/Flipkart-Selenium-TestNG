@@ -1,128 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-24T10:09:24 IST" name="Flipkart Suite" finished-at="2026-05-24T10:10:15 IST" duration-ms="51062">
+  <suite started-at="2026-09-06T10:24:45 IST" name="Flipkart Suite" finished-at="2026-09-06T10:25:30 IST" duration-ms="45455">
     <groups>
-      <group name="regression">
-        <method signature="FashionTest.verifyFirstProductNameIsDisplayed()[pri:4, instance:tests.FashionTest@36902638]" name="verifyFirstProductNameIsDisplayed" class="tests.FashionTest"/>
-        <method signature="FashionTest.verifyUserCanSwitchToProductWindow()[pri:6, instance:tests.FashionTest@36902638]" name="verifyUserCanSwitchToProductWindow" class="tests.FashionTest"/>
-        <method signature="FashionTest.verifyUserCanCloseWindow()[pri:7, instance:tests.FashionTest@36902638]" name="verifyUserCanCloseWindow" class="tests.FashionTest"/>
-      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="FashionTest.verifyHoverMenu()[pri:-1, instance:tests.FashionTest@36902638]" name="verifyHoverMenu" class="tests.FashionTest"/>
-        <method signature="ElectronicsTest.verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@36bc55de]" name="verifySwitchedtoElectronics" class="tests.ElectronicsTest"/>
-        <method signature="FashionTest.verifyUserCanOpenFashionTab()[pri:1, instance:tests.FashionTest@36902638]" name="verifyUserCanOpenFashionTab" class="tests.FashionTest"/>
-        <method signature="FlightTest.verifyFlightSearch()[pri:1, instance:tests.FlightTest@223d2c72]" name="verifyFlightSearch" class="tests.FlightTest"/>
-        <method signature="ElectronicsTest.verifySearchProduct()[pri:2, instance:tests.ElectronicsTest@36bc55de]" name="verifySearchProduct" class="tests.ElectronicsTest"/>
-        <method signature="FashionTest.verifyUserCanSearchShirts()[pri:2, instance:tests.FashionTest@36902638]" name="verifyUserCanSearchShirts" class="tests.FashionTest"/>
-        <method signature="FlightTest.verifySourceSelected()[pri:2, instance:tests.FlightTest@223d2c72]" name="verifySourceSelected" class="tests.FlightTest"/>
-        <method signature="ElectronicsTest.verifyApplyFilter()[pri:3, instance:tests.ElectronicsTest@36bc55de]" name="verifyApplyFilter" class="tests.ElectronicsTest"/>
-        <method signature="FashionTest.verifyUserCanSelectSearchSuggestion()[pri:3, instance:tests.FashionTest@36902638]" name="verifyUserCanSelectSearchSuggestion" class="tests.FashionTest"/>
-        <method signature="FlightTest.verifyDestinationSelected()[pri:3, instance:tests.FlightTest@223d2c72]" name="verifyDestinationSelected" class="tests.FlightTest"/>
-        <method signature="ElectronicsTest.verifyScrollPage()[pri:4, instance:tests.ElectronicsTest@36bc55de]" name="verifyScrollPage" class="tests.ElectronicsTest"/>
-        <method signature="FlightTest.verifyDateSelected(java.lang.String,java.lang.String)[pri:4, instance:tests.FlightTest@223d2c72]" name="verifyDateSelected" class="tests.FlightTest"/>
-        <method signature="ElectronicsTest.verifyOpenLaptop()[pri:5, instance:tests.ElectronicsTest@36bc55de]" name="verifyOpenLaptop" class="tests.ElectronicsTest"/>
-        <method signature="FashionTest.verifyUserCanOpenFirstProduct()[pri:5, instance:tests.FashionTest@36902638]" name="verifyUserCanOpenFirstProduct" class="tests.FashionTest"/>
-        <method signature="FlightTest.verifySearchResults()[pri:5, instance:tests.FlightTest@223d2c72]" name="verifySearchResults" class="tests.FlightTest"/>
-        <method signature="ElectronicsTest.verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@36bc55de]" name="verifySwitchWindow" class="tests.ElectronicsTest"/>
+        <method signature="ElectronicsTest.verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@1972e513]" name="verifySwitchedtoElectronics" class="tests.ElectronicsTest"/>
+        <method signature="FlightTest.verifyFlightSearch()[pri:1, instance:tests.FlightTest@1040be71]" name="verifyFlightSearch" class="tests.FlightTest"/>
+        <method signature="ElectronicsTest.verifySearchProduct()[pri:2, instance:tests.ElectronicsTest@1972e513]" name="verifySearchProduct" class="tests.ElectronicsTest"/>
+        <method signature="FlightTest.verifySourceSelected()[pri:2, instance:tests.FlightTest@1040be71]" name="verifySourceSelected" class="tests.FlightTest"/>
+        <method signature="ElectronicsTest.verifyApplyFilter()[pri:3, instance:tests.ElectronicsTest@1972e513]" name="verifyApplyFilter" class="tests.ElectronicsTest"/>
+        <method signature="FlightTest.verifyDestinationSelected()[pri:3, instance:tests.FlightTest@1040be71]" name="verifyDestinationSelected" class="tests.FlightTest"/>
+        <method signature="ElectronicsTest.verifyScrollPage()[pri:4, instance:tests.ElectronicsTest@1972e513]" name="verifyScrollPage" class="tests.ElectronicsTest"/>
+        <method signature="FlightTest.verifyDateSelected(java.lang.String,java.lang.String)[pri:4, instance:tests.FlightTest@1040be71]" name="verifyDateSelected" class="tests.FlightTest"/>
+        <method signature="ElectronicsTest.verifyOpenLaptop()[pri:5, instance:tests.ElectronicsTest@1972e513]" name="verifyOpenLaptop" class="tests.ElectronicsTest"/>
+        <method signature="FlightTest.verifySearchResults()[pri:5, instance:tests.FlightTest@1040be71]" name="verifySearchResults" class="tests.FlightTest"/>
+        <method signature="ElectronicsTest.verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@1972e513]" name="verifySwitchWindow" class="tests.ElectronicsTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-24T10:09:24 IST" name="Automation Tests" finished-at="2026-05-24T10:10:15 IST" duration-ms="51062">
-      <class name="tests.FashionTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:09:46 IST" name="setup" finished-at="2026-05-24T10:09:52 IST" duration-ms="6710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyHoverMenu()[pri:-1, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:09:52 IST" name="verifyHoverMenu" finished-at="2026-05-24T10:09:53 IST" duration-ms="584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHoverMenu -->
-        <test-method signature="verifyUserCanOpenFashionTab()[pri:1, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:09:53 IST" name="verifyUserCanOpenFashionTab" finished-at="2026-05-24T10:09:56 IST" duration-ms="2945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanOpenFashionTab -->
-        <test-method signature="verifyUserCanSearchShirts()[pri:2, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:09:56 IST" name="verifyUserCanSearchShirts" finished-at="2026-05-24T10:09:57 IST" duration-ms="1110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanSearchShirts -->
-        <test-method signature="verifyUserCanSelectSearchSuggestion()[pri:3, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:09:57 IST" name="verifyUserCanSelectSearchSuggestion" finished-at="2026-05-24T10:10:00 IST" duration-ms="3295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanSelectSearchSuggestion -->
-        <test-method signature="verifyFirstProductNameIsDisplayed()[pri:4, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:10:00 IST" name="verifyFirstProductNameIsDisplayed" finished-at="2026-05-24T10:10:00 IST" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFirstProductNameIsDisplayed -->
-        <test-method signature="verifyUserCanOpenFirstProduct()[pri:5, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:10:00 IST" name="verifyUserCanOpenFirstProduct" finished-at="2026-05-24T10:10:01 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanOpenFirstProduct -->
-        <test-method signature="verifyUserCanSwitchToProductWindow()[pri:6, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:10:01 IST" name="verifyUserCanSwitchToProductWindow" finished-at="2026-05-24T10:10:01 IST" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanSwitchToProductWindow -->
-        <test-method signature="verifyUserCanCloseWindow()[pri:7, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:10:01 IST" name="verifyUserCanCloseWindow" finished-at="2026-05-24T10:10:01 IST" duration-ms="107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanCloseWindow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FashionTest@36902638]" started-at="2026-05-24T10:10:01 IST" name="tearDown" finished-at="2026-05-24T10:10:01 IST" duration-ms="675" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.FashionTest -->
+    <test started-at="2026-09-06T10:24:45 IST" name="Automation Tests" finished-at="2026-09-06T10:25:30 IST" duration-ms="45455">
       <class name="tests.ElectronicsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:24 IST" name="setup" finished-at="2026-05-24T10:09:32 IST" duration-ms="8479" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:24:45 IST" name="setup" finished-at="2026-09-06T10:24:54 IST" duration-ms="8641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:32 IST" name="verifySwitchedtoElectronics" finished-at="2026-05-24T10:09:34 IST" duration-ms="1713" status="PASS">
+        <test-method signature="verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:24:54 IST" name="verifySwitchedtoElectronics" finished-at="2026-09-06T10:24:55 IST" duration-ms="1561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwitchedtoElectronics -->
-        <test-method signature="verifySearchProduct()[pri:2, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:34 IST" name="verifySearchProduct" finished-at="2026-05-24T10:09:37 IST" duration-ms="3175" status="PASS">
+        <test-method signature="verifySearchProduct()[pri:2, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:24:55 IST" name="verifySearchProduct" finished-at="2026-09-06T10:24:59 IST" duration-ms="3180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchProduct -->
-        <test-method signature="verifyApplyFilter()[pri:3, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:37 IST" name="verifyApplyFilter" finished-at="2026-05-24T10:09:40 IST" duration-ms="2938" status="PASS">
+        <test-method signature="verifyApplyFilter()[pri:3, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:24:59 IST" name="verifyApplyFilter" finished-at="2026-09-06T10:25:03 IST" duration-ms="4216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplyFilter -->
-        <test-method signature="verifyScrollPage()[pri:4, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:40 IST" name="verifyScrollPage" finished-at="2026-05-24T10:09:40 IST" duration-ms="10" status="PASS">
+        <test-method signature="verifyScrollPage()[pri:4, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:25:03 IST" name="verifyScrollPage" finished-at="2026-09-06T10:25:03 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScrollPage -->
-        <test-method signature="verifyOpenLaptop()[pri:5, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:40 IST" name="verifyOpenLaptop" finished-at="2026-05-24T10:09:41 IST" duration-ms="472" status="PASS">
+        <test-method signature="verifyOpenLaptop()[pri:5, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:25:03 IST" name="verifyOpenLaptop" finished-at="2026-09-06T10:25:04 IST" duration-ms="847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOpenLaptop -->
-        <test-method signature="verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:41 IST" name="verifySwitchWindow" finished-at="2026-05-24T10:09:45 IST" duration-ms="4224" status="PASS">
+        <test-method signature="verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:25:04 IST" name="verifySwitchWindow" finished-at="2026-09-06T10:25:09 IST" duration-ms="5224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwitchWindow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ElectronicsTest@36bc55de]" started-at="2026-05-24T10:09:45 IST" name="tearDown" finished-at="2026-05-24T10:09:46 IST" duration-ms="734" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ElectronicsTest@1972e513]" started-at="2026-09-06T10:25:09 IST" name="tearDown" finished-at="2026-09-06T10:25:10 IST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ElectronicsTest -->
       <class name="tests.FlightTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:01 IST" name="setup" finished-at="2026-05-24T10:10:08 IST" duration-ms="6558" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:10 IST" name="setup" finished-at="2026-09-06T10:25:16 IST" duration-ms="6050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyFlightSearch()[pri:1, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:08 IST" name="verifyFlightSearch" finished-at="2026-05-24T10:10:10 IST" duration-ms="2477" status="PASS">
+        <test-method signature="verifyFlightSearch()[pri:1, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:16 IST" name="verifyFlightSearch" finished-at="2026-09-06T10:25:18 IST" duration-ms="1302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlightSearch -->
-        <test-method signature="verifySourceSelected()[pri:2, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:10 IST" name="verifySourceSelected" finished-at="2026-05-24T10:10:11 IST" duration-ms="537" status="PASS">
+        <test-method signature="verifySourceSelected()[pri:2, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:18 IST" name="verifySourceSelected" finished-at="2026-09-06T10:25:18 IST" duration-ms="748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySourceSelected -->
-        <test-method signature="verifyDestinationSelected()[pri:3, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:11 IST" name="verifyDestinationSelected" finished-at="2026-05-24T10:10:11 IST" duration-ms="486" status="PASS">
+        <test-method signature="verifyDestinationSelected()[pri:3, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:18 IST" name="verifyDestinationSelected" finished-at="2026-09-06T10:25:19 IST" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDestinationSelected -->
-        <test-method signature="verifyDateSelected(java.lang.String,java.lang.String)[pri:4, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:11 IST" name="verifyDateSelected" finished-at="2026-05-24T10:10:12 IST" duration-ms="429" status="PASS">
+        <test-method signature="verifyDateSelected(java.lang.String,java.lang.String)[pri:4, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:19 IST" name="verifyDateSelected" finished-at="2026-09-06T10:25:19 IST" duration-ms="464" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,18 +79,70 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[June 2026]]>
+                <![CDATA[October 2026]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateSelected -->
-        <test-method signature="verifySearchResults()[pri:5, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:12 IST" name="verifySearchResults" finished-at="2026-05-24T10:10:14 IST" duration-ms="1932" status="PASS">
+        <test-method signature="verifySearchResults()[pri:5, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:19 IST" name="verifySearchResults" finished-at="2026-09-06T10:25:29 IST" duration-ms="10052" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //div[@class='css-g5y9jx r-13awgt0 r-14qjzug']//div[2] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='css-g5y9jx r-13awgt0 r-14qjzug']//div[2]"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57163}, goog:processID: 14444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57163/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241b1c70a6e7c3018f757e8cbdea7c4c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@class='css-g5y9jx r-13awgt0 r-14qjzug']//div[2] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='css-g5y9jx r-13awgt0 r-14qjzug']//div[2]"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57163}, goog:processID: 14444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57163/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241b1c70a6e7c3018f757e8cbdea7c4c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at base.BasePage.click(BasePage.java:23)
+at pages.FlightPage.clickSearch(FlightPage.java:80)
+at tests.FlightTest.verifySearchResults(FlightTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FlightTest@223d2c72]" started-at="2026-05-24T10:10:14 IST" name="tearDown" finished-at="2026-05-24T10:10:15 IST" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FlightTest@1040be71]" started-at="2026-09-06T10:25:30 IST" name="tearDown" finished-at="2026-09-06T10:25:30 IST" duration-ms="475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
