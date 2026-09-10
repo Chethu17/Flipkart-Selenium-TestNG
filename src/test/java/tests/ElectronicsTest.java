@@ -18,10 +18,11 @@ public class ElectronicsTest extends BaseTest {
     }
     
     @Test(priority=2, groups="smoke")
-    public void verifySearchProduct() {
+    public void verifySearchProduct() throws InterruptedException {
     	HomePage home = new HomePage(driver);
         ElectronicsPage electronics = new ElectronicsPage(driver);
     	home.searchProduct("laptop");
+    	Thread.sleep(2000);
         electronics.selectSuggestion("under 40000");
         Assert.assertTrue(driver.getCurrentUrl().contains("laptop"));
     }
