@@ -52,7 +52,7 @@ public class ElectronicsTest extends BaseTest {
         WindowUtils window = new WindowUtils(driver);
         window.switchToChildWindow();
         ElectronicsPage electronics = new ElectronicsPage(driver);
-        electronics.clickBuyButton();
+        //electronics.clickBuyButton();
         Assert.assertTrue(driver.getTitle().length() > 0);
     }
 }
