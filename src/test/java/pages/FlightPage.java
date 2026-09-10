@@ -77,6 +77,6 @@ public class FlightPage extends BasePage {
     }
 
     public void clickSearch() {
-        click(By.xpath("//div[@class='css-g5y9jx r-1q142lx r-pfqljz r-1ipicw7']//div[2]"));
+        click(By.xpath("//div[normalize-space()='Search flights']"));
     }
 }

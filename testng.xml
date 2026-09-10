@@ -1,12 +1,11 @@
-
 <suite name="Flipkart Suite">
 
-    <parameter name="day" value="14"/>
-    <parameter name="monthYear" value="October 2026"/>
-
     <test name="Automation Tests">
-    
-    	<groups>
+
+        <parameter name="day" value="14"/>
+        <parameter name="monthYear" value="October 2026"/>
+
+        <groups>
             <run>
                 <include name="smoke"/>
                 <include name="regression"/>
@@ -14,10 +13,9 @@
         </groups>
 
         <classes>
-			<class name="tests.ElectronicsTest"/>
-            <class name="tests.FashionTest"/>     
-            <class name="tests.FlightTest"/>
-
+            <class name="tests.ElectronicsTest"/> 
+            <class name="tests.FashionTest"/> 
+            <class name="tests.FlightTest"/> 
         </classes>
 
     </test>

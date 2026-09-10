@@ -27,16 +27,16 @@ public class BaseTest {
     public void setup() {
         
     	ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
+        //options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
+        //options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
 
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         
     	driver = new ChromeDriver(options);    
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.getProperty("implicitWait"))));
         driver.get(ConfigReader.getProperty("url"));
 

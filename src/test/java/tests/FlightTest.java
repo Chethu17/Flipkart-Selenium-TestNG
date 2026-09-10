@@ -34,8 +34,9 @@ public class FlightTest extends BaseTest {
     	Assert.assertTrue(selectedDestination.contains("Bengaluru"));
     }
     
-    @Parameters({ "day", "monthYear" })    
+     
     @Test(priority=4, groups="smoke")
+    @Parameters({ "day", "monthYear" }) 
     public void verifyDateSelected(String day, String monthYear) {       
     	FlightPage flight = new FlightPage(driver);
         flight.selectDepartureDate(day, monthYear);

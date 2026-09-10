@@ -47,10 +47,10 @@ public class ElectronicsTest extends BaseTest {
     }
     
     @Test(priority=6, groups="smoke")
-    public void verifySwitchWindow() {
-        ElectronicsPage electronics = new ElectronicsPage(driver);
+    public void verifySwitchWindow() {     
         WindowUtils window = new WindowUtils(driver);
         window.switchToChildWindow();
+        ElectronicsPage electronics = new ElectronicsPage(driver);
         electronics.clickBuyButton();
         Assert.assertTrue(driver.getTitle().length() > 0);
     }

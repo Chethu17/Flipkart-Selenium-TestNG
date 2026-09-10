@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 06 20:10:57 IST 2026</td>
+<td>Started on:</td><td>Thu Sep 10 19:10:31 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49901 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66515 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>regression smoke </td>
 </tr><tr>
@@ -76,51 +76,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ElectronicsTest.verifySwitchWindow()'><b>verifySwitchWindow</b><br>Test class: tests.ElectronicsTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=151.0.7922.174)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+<td title='tests.FlightTest.verifySearchResults()'><b>verifySearchResults</b><br>Test class: tests.FlightTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.cssSelector: css-g5y9jx.r-w1e4ik.r-16y2uox.r-1q142lx.r-pfqljz to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;css-g5y9jx.r-w1e4ik.r-16y2uox.r-1q142lx.r-pfqljz&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3195f93382708e4c3520030e3fc3a0b7, clickElement {id=f.BF46E1BE671C6B50D1917D59A371F233.d.8BBA600215B81F33D52EC8DC7B2D34C6.e.16}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52745}, goog:processID: 1180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52745/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3195f93382708e4c3520030e3fc3a0b7)] -&gt; xpath: (//div[@class=&apos;_1psv1zeb9 _1psv1ze0 _1psv1zeku _1psv1ze6r&apos;])[2]]
-Session ID: 3195f93382708e4c3520030e3fc3a0b7
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.ElectronicsPage.clickBuyButton(ElectronicsPage.java:77)
-	at tests.ElectronicsTest.verifySwitchWindow(ElectronicsTest.java:54)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62952}, goog:processID: 18788, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62952/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2586c8069fafe98faf36efc95834fbfe
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at base.BasePage.click(BasePage.java:23)
+	at pages.FlightPage.clickSearch(FlightPage.java:80)
+	at tests.FlightTest.verifySearchResults(FlightTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace866901553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace866901553'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=151.0.7922.174)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace590406624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace590406624'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.cssSelector: css-g5y9jx.r-w1e4ik.r-16y2uox.r-1q142lx.r-pfqljz to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;css-g5y9jx.r-w1e4ik.r-16y2uox.r-1q142lx.r-pfqljz&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3195f93382708e4c3520030e3fc3a0b7, clickElement {id=f.BF46E1BE671C6B50D1917D59A371F233.d.8BBA600215B81F33D52EC8DC7B2D34C6.e.16}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52745}, goog:processID: 1180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52745/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3195f93382708e4c3520030e3fc3a0b7)] -&gt; xpath: (//div[@class=&apos;_1psv1zeb9 _1psv1ze0 _1psv1zeku _1psv1ze6r&apos;])[2]]
-Session ID: 3195f93382708e4c3520030e3fc3a0b7
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.ElectronicsPage.clickBuyButton(ElectronicsPage.java:77)
-	at tests.ElectronicsTest.verifySwitchWindow(ElectronicsTest.java:54)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62952}, goog:processID: 18788, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62952/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2586c8069fafe98faf36efc95834fbfe
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at base.BasePage.click(BasePage.java:23)
+	at pages.FlightPage.clickSearch(FlightPage.java:80)
+	at tests.FlightTest.verifySearchResults(FlightTest.java:48)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -148,8 +130,8 @@ Session ID: 3195f93382708e4c3520030e3fc3a0b7
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>4</td>
-<td>tests.ElectronicsTest@3f4faf53</td></tr>
+<td>10</td>
+<td>tests.FlightTest@28dcca0c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -160,12 +142,17 @@ Session ID: 3195f93382708e4c3520030e3fc3a0b7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ElectronicsTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: tests.ElectronicsTest</td>
+<td title='tests.FlightTest.verifySourceSelected()'><b>verifySourceSelected</b><br>Test class: tests.FlightTest</td>
 <td></td>
-<td>4</td>
+<td>1</td>
+<td>tests.FlightTest@28dcca0c</td></tr>
+<tr>
+<td title='tests.ElectronicsTest.verifySwitchedtoElectronics()'><b>verifySwitchedtoElectronics</b><br>Test class: tests.ElectronicsTest</td>
+<td></td>
+<td>1</td>
 <td>tests.ElectronicsTest@3f4faf53</td></tr>
 <tr>
-<td title='tests.FashionTest.verifyUserCanCloseWindow()'><b>verifyUserCanCloseWindow</b><br>Test class: tests.FashionTest</td>
+<td title='tests.FashionTest.verifyUserCanOpenFashionTab()'><b>verifyUserCanOpenFashionTab</b><br>Test class: tests.FashionTest</td>
 <td></td>
 <td>0</td>
 <td>tests.FashionTest@25be7b63</td></tr>
@@ -175,45 +162,10 @@ Session ID: 3195f93382708e4c3520030e3fc3a0b7
 <td>0</td>
 <td>tests.ElectronicsTest@3f4faf53</td></tr>
 <tr>
-<td title='tests.FlightTest.verifySearchResults()'><b>verifySearchResults</b><br>Test class: tests.FlightTest</td>
+<td title='tests.FlightTest.verifyDateSelected()'><b>verifyDateSelected</b><br>Test class: tests.FlightTest<br>Parameters: 14, October 2026</td>
 <td></td>
 <td>0</td>
 <td>tests.FlightTest@28dcca0c</td></tr>
-<tr>
-<td title='tests.FashionTest.verifyUserCanOpenFashionTab()'><b>verifyUserCanOpenFashionTab</b><br>Test class: tests.FashionTest</td>
-<td></td>
-<td>0</td>
-<td>tests.FashionTest@25be7b63</td></tr>
-<tr>
-<td title='tests.ElectronicsTest.verifySwitchedtoElectronics()'><b>verifySwitchedtoElectronics</b><br>Test class: tests.ElectronicsTest</td>
-<td></td>
-<td>1</td>
-<td>tests.ElectronicsTest@3f4faf53</td></tr>
-<tr>
-<td title='tests.FlightTest.verifySourceSelected()'><b>verifySourceSelected</b><br>Test class: tests.FlightTest</td>
-<td></td>
-<td>0</td>
-<td>tests.FlightTest@28dcca0c</td></tr>
-<tr>
-<td title='tests.FashionTest.verifyUserCanOpenFirstProduct()'><b>verifyUserCanOpenFirstProduct</b><br>Test class: tests.FashionTest</td>
-<td></td>
-<td>0</td>
-<td>tests.FashionTest@25be7b63</td></tr>
-<tr>
-<td title='tests.FashionTest.verifyHoverMenu()'><b>verifyHoverMenu</b><br>Test class: tests.FashionTest</td>
-<td></td>
-<td>0</td>
-<td>tests.FashionTest@25be7b63</td></tr>
-<tr>
-<td title='tests.FlightTest.verifyDestinationSelected()'><b>verifyDestinationSelected</b><br>Test class: tests.FlightTest</td>
-<td></td>
-<td>0</td>
-<td>tests.FlightTest@28dcca0c</td></tr>
-<tr>
-<td title='tests.FashionTest.verifyUserCanSelectSearchSuggestion()'><b>verifyUserCanSelectSearchSuggestion</b><br>Test class: tests.FashionTest</td>
-<td></td>
-<td>3</td>
-<td>tests.FashionTest@25be7b63</td></tr>
 <tr>
 <td title='tests.FlightTest.verifyFlightSearch()'><b>verifyFlightSearch</b><br>Test class: tests.FlightTest</td>
 <td></td>
@@ -225,17 +177,22 @@ Session ID: 3195f93382708e4c3520030e3fc3a0b7
 <td>2</td>
 <td>tests.FashionTest@25be7b63</td></tr>
 <tr>
-<td title='tests.FlightTest.verifyDateSelected()'><b>verifyDateSelected</b><br>Test class: tests.FlightTest<br>Parameters: 14, October 2026</td>
+<td title='tests.FlightTest.verifyDestinationSelected()'><b>verifyDestinationSelected</b><br>Test class: tests.FlightTest</td>
 <td></td>
 <td>0</td>
 <td>tests.FlightTest@28dcca0c</td></tr>
 <tr>
-<td title='tests.ElectronicsTest.verifyApplyFilter()'><b>verifyApplyFilter</b><br>Test class: tests.ElectronicsTest</td>
+<td title='tests.FashionTest.verifyUserCanCloseWindow()'><b>verifyUserCanCloseWindow</b><br>Test class: tests.FashionTest</td>
 <td></td>
-<td>3</td>
-<td>tests.ElectronicsTest@3f4faf53</td></tr>
+<td>0</td>
+<td>tests.FashionTest@25be7b63</td></tr>
 <tr>
 <td title='tests.FashionTest.verifyFirstProductNameIsDisplayed()'><b>verifyFirstProductNameIsDisplayed</b><br>Test class: tests.FashionTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FashionTest@25be7b63</td></tr>
+<tr>
+<td title='tests.FashionTest.verifyUserCanOpenFirstProduct()'><b>verifyUserCanOpenFirstProduct</b><br>Test class: tests.FashionTest</td>
 <td></td>
 <td>0</td>
 <td>tests.FashionTest@25be7b63</td></tr>
@@ -243,6 +200,31 @@ Session ID: 3195f93382708e4c3520030e3fc3a0b7
 <td title='tests.FashionTest.verifyUserCanSwitchToProductWindow()'><b>verifyUserCanSwitchToProductWindow</b><br>Test class: tests.FashionTest</td>
 <td></td>
 <td>0</td>
+<td>tests.FashionTest@25be7b63</td></tr>
+<tr>
+<td title='tests.ElectronicsTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: tests.ElectronicsTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ElectronicsTest@3f4faf53</td></tr>
+<tr>
+<td title='tests.ElectronicsTest.verifySwitchWindow()'><b>verifySwitchWindow</b><br>Test class: tests.ElectronicsTest</td>
+<td></td>
+<td>6</td>
+<td>tests.ElectronicsTest@3f4faf53</td></tr>
+<tr>
+<td title='tests.FashionTest.verifyHoverMenu()'><b>verifyHoverMenu</b><br>Test class: tests.FashionTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FashionTest@25be7b63</td></tr>
+<tr>
+<td title='tests.ElectronicsTest.verifyApplyFilter()'><b>verifyApplyFilter</b><br>Test class: tests.ElectronicsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.ElectronicsTest@3f4faf53</td></tr>
+<tr>
+<td title='tests.FashionTest.verifyUserCanSelectSearchSuggestion()'><b>verifyUserCanSelectSearchSuggestion</b><br>Test class: tests.FashionTest</td>
+<td></td>
+<td>2</td>
 <td>tests.FashionTest@25be7b63</td></tr>
 <tr>
 <td title='tests.ElectronicsTest.verifyOpenLaptop()'><b>verifyOpenLaptop</b><br>Test class: tests.ElectronicsTest</td>

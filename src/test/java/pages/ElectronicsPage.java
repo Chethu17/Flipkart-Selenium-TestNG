@@ -72,7 +72,7 @@ public class ElectronicsPage extends BasePage {
 
     public void clickBuyButton() {
     	System.out.println(driver.getCurrentUrl());
-        By buyButton = By.xpath("(//div[@class='_1psv1zeb9 _1psv1ze0 _1psv1zeku _1psv1ze6r'])[2]");
+        By buyButton = By.xpath("//div[normalize-space()='Buy now']");
         WebElement button =wait.until(ExpectedConditions.elementToBeClickable(buyButton));
         button.click();
     }

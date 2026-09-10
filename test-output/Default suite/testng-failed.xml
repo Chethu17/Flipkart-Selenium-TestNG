@@ -7,6 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verifySearchResults"/>
           <include name="clearOldScreenshots"/>
           <include name="verifyDateSelected"/>
         </methods>

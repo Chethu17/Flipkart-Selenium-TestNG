@@ -6,6 +6,7 @@ pages\FlightPage.class
 pages\HomePage.class
 utilities\WindowUtils.class
 pages\ElectronicsPage.class
+tests\MobilesTest.class
 base\BasePage.class
 base\BaseTest.class
 utilities\ScreenshotUtils.class
