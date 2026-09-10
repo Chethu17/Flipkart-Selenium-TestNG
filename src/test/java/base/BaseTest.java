@@ -31,12 +31,12 @@ public class BaseTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-gpu");
-        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--window-size=1920,1000");
 
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         
     	driver = new ChromeDriver(options);    
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.getProperty("implicitWait"))));
         driver.get(ConfigReader.getProperty("url"));
 
