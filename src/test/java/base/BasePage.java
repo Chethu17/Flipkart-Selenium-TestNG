@@ -23,6 +23,12 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
     
+    public void safeClick(By locator) {
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});",element);
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+    }
+    
     public void type(By locator, String text) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).sendKeys(text);
     }
