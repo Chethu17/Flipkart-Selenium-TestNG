@@ -17,6 +17,7 @@
             <class name="tests.FashionTest"/>
             <class name="tests.FlightTest"/> 
         </classes>
+        
     </test>
 
 </suite>
