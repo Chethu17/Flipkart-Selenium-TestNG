@@ -59,7 +59,7 @@ public class ElectronicsPage extends BasePage {
 
     public void openLaptop() {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-    	By laptop =By.xpath("(//div[@class='RG5Slk'])[11]");
+    	By laptop =By.xpath("(//div[@class='ZFwe0M row'])[11]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
         wait.until(ExpectedConditions.elementToBeClickable(laptop));
         
