@@ -3,7 +3,7 @@
     <test name="Automation Tests">
 
         <parameter name="day" value="14"/>
-        <parameter name="monthYear" value="October 2026"/>
+        <parameter name="monthYear" value="December 2026"/>
 
         <groups>
             <run>
