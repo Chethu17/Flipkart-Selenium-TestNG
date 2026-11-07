@@ -4,14 +4,10 @@ import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-<<<<<<< HEAD
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
-=======
->>>>>>> b38cd500ada2134a716c18dc9b0efc0723d0ad74
 //import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
@@ -43,13 +39,9 @@ public class BaseTest {
         
     	driver = new ChromeDriver(options);    
         //driver.manage().window().maximize();
-<<<<<<< HEAD
     	driver.manage().window().setSize(new Dimension(1920, 1080));   // import org.openqa.selenium.Dimension
 
     	System.out.println("Viewport: " + ((JavascriptExecutor) driver).executeScript("return window.innerWidth + 'x' + window.innerHeight"));
-=======
-        driver.manage().window().setSize(new Dimension(1920, 1080));
->>>>>>> b38cd500ada2134a716c18dc9b0efc0723d0ad74
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.getProperty("implicitWait"))));
         driver.get(ConfigReader.getProperty("url"));
 
