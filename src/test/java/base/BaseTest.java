@@ -36,7 +36,7 @@ public class BaseTest {
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         
     	driver = new ChromeDriver(options);    
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.getProperty("implicitWait"))));
         driver.get(ConfigReader.getProperty("url"));
 
