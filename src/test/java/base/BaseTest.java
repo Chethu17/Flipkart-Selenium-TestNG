@@ -4,7 +4,7 @@ import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
+//import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,10 +31,10 @@ public class BaseTest {
         options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
+        //options.addArguments("--disable-gpu");
         //options.addArguments("--window-size=1920,1000");
 
-        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        //options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         
     	driver = new ChromeDriver(options);    
         //driver.manage().window().maximize();
