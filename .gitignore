@@ -1,0 +1,11 @@
+# Maven build output
+/target/
+
+# TestNG generated reports
+/test-output/
+
+# Eclipse settings (keep these excluded)
+/.settings/
+
+# Log files
+*.log
