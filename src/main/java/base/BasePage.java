@@ -30,7 +30,7 @@ public class BasePage {
     }
     
     public void type(By locator, String text) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).sendKeys(text);
+    	 wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfElementLocated(locator))).sendKeys(text);
     }
 
     public WebElement getElement(By locator) {
