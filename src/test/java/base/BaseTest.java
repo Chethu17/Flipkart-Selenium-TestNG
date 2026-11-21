@@ -29,16 +29,16 @@ public class BaseTest {
     public void setup() {
         
     	ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        //options.addArguments("--disable-gpu");
-        //options.addArguments("--window-size=1920,1000");
 
-        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-        
-    	driver = new ChromeDriver(options);    
-        //driver.manage().window().maximize();
+    	boolean headless = Boolean.parseBoolean(System.getProperty("headless", "true"));
+    	if (headless) {
+    	    options.addArguments("--headless=new");
+    	}
+    	options.addArguments("--no-sandbox");
+    	options.addArguments("--disable-dev-shm-usage");
+    	options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+
+    	driver = new ChromeDriver(options);
     	driver.manage().window().setSize(new Dimension(1920, 1080));   // import org.openqa.selenium.Dimension
 
     	System.out.println("Viewport: " + ((JavascriptExecutor) driver).executeScript("return window.innerWidth + 'x' + window.innerHeight"));

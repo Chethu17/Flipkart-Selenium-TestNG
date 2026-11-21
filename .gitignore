@@ -1,0 +1,13 @@
+# Maven build output
+/target/
+
+# TestNG/Allure generated reports
+/test-output/
+/target/allure-results/
+/target/surefire-reports/
+
+# Eclipse IDE metadata
+/.settings/
+
+# Logs
+*.log
