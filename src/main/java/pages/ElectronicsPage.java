@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -70,10 +72,19 @@ public class ElectronicsPage extends BasePage {
        
     }
 
+
     public void clickBuyButton() {
     	System.out.println(driver.getCurrentUrl());
-        By buyButton = By.xpath("//div[normalize-space()='Buy now']");
-        WebElement button =wait.until(ExpectedConditions.elementToBeClickable(buyButton));
-        button.click();
+        By buyNow = By.xpath("//div[normalize-space()='Buy now']");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        wait.until(d -> {
+            try {
+                d.findElement(buyNow).click();
+                return true;
+            } catch (StaleElementReferenceException | ElementClickInterceptedException e) {
+                return false;   // page still changing, try again
+            }
+        });
     }
 }
