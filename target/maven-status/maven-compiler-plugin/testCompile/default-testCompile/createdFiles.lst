@@ -1,6 +1,0 @@
-base\BaseTest.class
-utilities\TestListener.class
-tests\ElectronicsTest.class
-tests\FlightTest.class
-tests\FashionTest.class
-tests\MobilesTest.class
