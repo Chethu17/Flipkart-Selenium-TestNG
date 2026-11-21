@@ -8,6 +8,7 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -59,25 +60,18 @@ public class ElectronicsPage extends BasePage {
         scroll(0, 300);
     }
 
-
-
-public void openLaptop() {
-
-    By laptop = By.xpath("(//div[@class='ZFwe0M row'])[11]");
-
-    WebDriverWait wait = new WebDriverWait( driver, Duration.ofSeconds(15));
+    public void openLaptop() {
+    	By laptop = By.xpath("(//div[@class='ZFwe0M row'])[11]");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
     // Wait until the laptop element is visible
     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
 
     // Scroll element to the center of the viewport
-    ((JavascriptExecutor) driver).executeScript(
-        "arguments[0].scrollIntoView({block:'center', inline:'nearest'});",element);
-
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center', inline:'nearest'});", element);
+		
     // Wait until element becomes clickable and click
     wait.until(ExpectedConditions.elementToBeClickable(laptop)).click();
-
-
        
     }
 
