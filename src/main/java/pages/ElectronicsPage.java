@@ -27,17 +27,17 @@ public class ElectronicsPage extends BasePage {
     }
 
     public void selectSuggestion(String value) {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    	wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div[class='lfFUxn'] li[class='Swx5kP']")));
-    	
-    	List<WebElement> suggestions = driver.findElements(By.cssSelector("div[class='lfFUxn'] li[class='Swx5kP']"));
-        for (WebElement option : suggestions) {
-            if (option.getText().contains(value)) {
-            	wait.until(ExpectedConditions.elementToBeClickable(option));
-                option.click();
-                break;
-            }
-        }
+        By suggestions = By.cssSelector("div.lfFUxn li.Swx5kP");
+
+        new WebDriverWait(driver, Duration.ofSeconds(15)).ignoring(StaleElementReferenceException.class).until(d -> {
+                for (WebElement option : d.findElements(suggestions)) {
+                    if (option.isDisplayed() && option.getText().contains(value)) {
+                        option.click();
+                        return true;
+                    }
+                }
+                return false;
+            });
     }
 
     public void applyBrandFilters() throws InterruptedException {
@@ -63,9 +63,7 @@ public class ElectronicsPage extends BasePage {
     public void openLaptop() {
     	By laptop = By.xpath("(//div[@class='ZFwe0M row'])[11]");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-    // Wait until the laptop element is visible
-    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
 
     // Scroll element to the center of the viewport
     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center', inline:'nearest'});", element);
