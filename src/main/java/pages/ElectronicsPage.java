@@ -60,15 +60,17 @@ public class ElectronicsPage extends BasePage {
     }
 
     public void openLaptop() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-    	By laptop =By.xpath("(//div[@class='ZFwe0M row'])[11]");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
-        wait.until(ExpectedConditions.elementToBeClickable(laptop));
-        
-    	Actions act = new Actions(driver);
-		WebElement element = driver.findElement(laptop);
-		act.moveToElement(element).perform();
-		element.click();
+    	By laptop = By.xpath("(//div[@class='ZFwe0M row'])[11]");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+    // Wait until the laptop element is visible
+    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
+
+    // Scroll element to the center of the viewport
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center', inline:'nearest'});", element);
+		
+    // Wait until element becomes clickable and click
+    wait.until(ExpectedConditions.elementToBeClickable(laptop)).click();
        
     }
 
