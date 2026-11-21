@@ -20,10 +20,8 @@ public class ElectronicsTest extends BaseTest {
     @Test(priority=2, groups="smoke")
     public void verifySearchProduct() {
     	HomePage home = new HomePage(driver);
-    	
         ElectronicsPage electronics = new ElectronicsPage(driver);
-    	home.searchProduct("laptop");
-    	
+    	home.searchProduct("laptop");  	
         electronics.selectSuggestion("under 40000");
         Assert.assertTrue(driver.getCurrentUrl().contains("laptop"));
     }
