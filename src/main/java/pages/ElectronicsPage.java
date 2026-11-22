@@ -59,14 +59,14 @@ public class ElectronicsPage extends BasePage {
     }
 
     public void openLaptop() {
-    	Actions act = new Actions(driver);
-    	By laptop = By.xpath("(//div[@class='ZFwe0M row'])[1]");
+    	  Actions act = new Actions(driver);
+		    By laptop = By.xpath("(//div[@class='ZFwe0M row'])[1]");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(laptop));
         
         act.moveToElement(element).perform();
-		element.click();
-/*
+		    element.click();
+    /*
     // Scroll element to the center of the viewport
     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center', inline:'nearest'});", element);
 		
