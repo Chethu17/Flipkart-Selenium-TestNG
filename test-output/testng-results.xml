@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-21T20:30:02 IST" name="Default suite" finished-at="2026-11-21T20:30:31 IST" duration-ms="29914">
+  <suite started-at="2026-11-22T15:46:51 IST" name="Default suite" finished-at="2026-11-22T15:47:32 IST" duration-ms="41149">
     <groups>
       <group name="smoke">
         <method signature="ElectronicsTest.verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@70cf32e3]" name="verifySwitchedtoElectronics" class="tests.ElectronicsTest"/>
@@ -13,41 +13,41 @@
         <method signature="ElectronicsTest.verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@70cf32e3]" name="verifySwitchWindow" class="tests.ElectronicsTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-11-21T20:30:02 IST" name="Default test" finished-at="2026-11-21T20:30:31 IST" duration-ms="29914">
+    <test started-at="2026-11-22T15:46:51 IST" name="Default test" finished-at="2026-11-22T15:47:32 IST" duration-ms="41149">
       <class name="tests.ElectronicsTest">
-        <test-method is-config="true" signature="clearOldScreenshots()[pri:0, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:02 IST" name="clearOldScreenshots" finished-at="2026-11-21T20:30:02 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="clearOldScreenshots()[pri:0, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:46:51 IST" name="clearOldScreenshots" finished-at="2026-11-22T15:46:51 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearOldScreenshots -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:02 IST" name="setup" finished-at="2026-11-21T20:30:15 IST" duration-ms="13298" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:46:51 IST" name="setup" finished-at="2026-11-22T15:47:05 IST" duration-ms="13700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:15 IST" name="verifySwitchedtoElectronics" finished-at="2026-11-21T20:30:17 IST" duration-ms="1579" status="PASS">
+        <test-method signature="verifySwitchedtoElectronics()[pri:1, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:05 IST" name="verifySwitchedtoElectronics" finished-at="2026-11-22T15:47:08 IST" duration-ms="2928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwitchedtoElectronics -->
-        <test-method signature="verifySearchProduct()[pri:2, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:17 IST" name="verifySearchProduct" finished-at="2026-11-21T20:30:21 IST" duration-ms="3750" status="PASS">
+        <test-method signature="verifySearchProduct()[pri:2, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:08 IST" name="verifySearchProduct" finished-at="2026-11-22T15:47:12 IST" duration-ms="3474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchProduct -->
-        <test-method signature="verifyApplyFilter()[pri:3, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:21 IST" name="verifyApplyFilter" finished-at="2026-11-21T20:30:25 IST" duration-ms="4283" status="PASS">
+        <test-method signature="verifyApplyFilter()[pri:3, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:12 IST" name="verifyApplyFilter" finished-at="2026-11-22T15:47:17 IST" duration-ms="4961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplyFilter -->
-        <test-method signature="verifyScrollPage()[pri:4, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:25 IST" name="verifyScrollPage" finished-at="2026-11-21T20:30:25 IST" duration-ms="34" status="PASS">
+        <test-method signature="verifyScrollPage()[pri:4, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:17 IST" name="verifyScrollPage" finished-at="2026-11-22T15:47:17 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScrollPage -->
-        <test-method signature="verifyOpenLaptop()[pri:5, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:26 IST" name="verifyOpenLaptop" finished-at="2026-11-21T20:30:26 IST" duration-ms="418" status="PASS">
+        <test-method signature="verifyOpenLaptop()[pri:5, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:17 IST" name="verifyOpenLaptop" finished-at="2026-11-22T15:47:19 IST" duration-ms="1137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOpenLaptop -->
-        <test-method signature="verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:26 IST" name="verifySwitchWindow" finished-at="2026-11-21T20:30:31 IST" duration-ms="4577" status="PASS">
+        <test-method signature="verifySwitchWindow()[pri:6, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:19 IST" name="verifySwitchWindow" finished-at="2026-11-22T15:47:27 IST" duration-ms="8561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwitchWindow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-21T20:30:31 IST" name="tearDown" finished-at="2026-11-21T20:30:31 IST" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ElectronicsTest@70cf32e3]" started-at="2026-11-22T15:47:27 IST" name="tearDown" finished-at="2026-11-22T15:47:32 IST" duration-ms="5302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
